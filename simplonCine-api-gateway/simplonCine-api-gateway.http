@@ -1,0 +1,6 @@
+@simplonCine_api_gateway_HostAddress = http://localhost:5014
+
+GET {{simplonCine_api_gateway_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
