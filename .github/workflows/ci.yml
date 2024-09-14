@@ -20,10 +20,9 @@ jobs:
         dotnet-version: '7.x'
 
     - name: Move to API Gateway directory
-      working-directory: simploCine-api-gateway/simploCine-api-gateway
-      run: pwd
+      run: cd simploCine-api-gateway/simploCine-api-gateway
 
-      
+
     - name: Build Docker image
       run: docker build -t ${{ secrets.DOCKER_USERNAME }}/simplocine-api-gateway:latest .
 
