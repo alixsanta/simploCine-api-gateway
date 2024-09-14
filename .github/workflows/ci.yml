@@ -21,7 +21,7 @@ jobs:
 
     # Move to the api-gateway directory
     - name: Change to API Gateway directory
-      run: cd simploCine-api-gateway
+      run: cd ../simploCine-api-gateway
 
     # Build the project
     - name: Build solution
