@@ -19,8 +19,15 @@ jobs:
       with:
         dotnet-version: '7.x'
 
-    - name: Move to API Gateway directory
-      run: cd simploCine-api-gateway/simploCine-api-gateway
+    - name: List files at root level
+      run: ls -al
+
+    # Change directory to the project directory
+    - name: Move to project directory
+      run: |
+        cd simploCine-api-gateway/simploCine-api-gateway
+        pwd
+        ls -al  # List files in this directory to verify Dockerfile is present
 
 
     - name: Build Docker image
