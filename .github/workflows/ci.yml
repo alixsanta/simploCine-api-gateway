@@ -19,14 +19,6 @@ jobs:
       with:
         dotnet-version: '7.x'
 
-    - name: Move to API Gateway directory
-      working-directory: simploCine-api-gateway/simploCine-api-gateway
-      run: pwd
-    
-    # Build the project
-    - name: Build solution
-      run: dotnet build --no-restore --configuration Release
-
 
     - name: Build Docker image
       run: docker build -t ${{ secrets.DOCKER_USERNAME }}/simploCine-api-gateway:latest .
