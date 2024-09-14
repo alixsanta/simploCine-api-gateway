@@ -25,7 +25,7 @@ jobs:
     # Change directory to the project directory
     - name: Move to project directory
       run: |
-        cd simploCine-api-gateway/simploCine-api-gateway
+        cd ../simploCine-api-gateway/simploCine-api-gateway
         pwd
         ls -al  # List files in this directory to verify Dockerfile is present
 
