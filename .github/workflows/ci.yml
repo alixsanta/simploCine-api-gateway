@@ -31,7 +31,11 @@ jobs:
 
 
     - name: Build Docker image
-      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/simplocine-api-gateway:latest .
+      working-directory: simplonCine-api-gateway
+      run: |
+        echo "Current directory content before Docker build:"
+        ls -al
+        docker build -t ${{ secrets.DOCKER_USERNAME }}/simplocine-api-gateway:latest .
 
 
     - name: Push Docker image to Docker Hub
