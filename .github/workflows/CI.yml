@@ -33,7 +33,7 @@ jobs:
 
       # Étape 5 : Exécuter les tests unitaires avec la collecte de couverture de code
       - name: Run tests with code coverage
-        run: dotnet test simplonCine-api-gateway.test/simplonCine-api-gateway.test.csproj --no-restore --collect:"XPlat Code Coverage" /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput=./TestResults/coverage.cobertura.xml --verbosity normal
+        run: dotnet test simplonCine-api-gateway.tests/simplonCine-api-gateway.tests.csproj --no-restore --collect:"XPlat Code Coverage" /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput=./TestResults/coverage.cobertura.xml --verbosity normal
 
       # Étape 6 : Publier le fichier de couverture Cobertura en tant qu'artefact
       - name: Upload Cobertura coverage report
