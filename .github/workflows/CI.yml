@@ -26,6 +26,9 @@ jobs:
       # Étape 3 : Restaurer les dépendances (en spécifiant le chemin vers le projet dans simplonCine-api-gateway)
       - name: Restore dependencies
         run: dotnet restore simplonCine-api-gateway/simplonCine-api-gateway.sln --no-cache
+    
+      - name: Restore test project dependencies
+        run: dotnet restore simplonCine-api-gateway.tests/simplonCine-api-gateway.tests.csproj --no-cache
 
       # Étape 4 : Compiler la solution
       - name: Build solution
