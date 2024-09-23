@@ -1,1 +1,26 @@
 node_modules/
+
+# Ignorer les dossiers bin et obj dans simpl_cine
+simpl_cine/bin/
+simpl_cine/obj/
+
+# Ignorer les packages et dépendances NuGet dans simpl_cine
+simpl_cine/packages/
+simpl_cine/*.nupkg
+simpl_cine/project.lock.json
+simpl_cine/project.fragment.lock.json
+
+# Ignorer les fichiers générés par Visual Studio ou d'autres IDE
+simpl_cine/*.user
+simpl_cine/*.rsuser
+simpl_cine/*.suo
+simpl_cine/*.sln.docstates
+simpl_cine/.vs/
+simpl_cine/.vscode/
+
+# Ignorer le dossier .nuget
+simpl_cine/.nuget/
+
+# Ignorer les fichiers de logs et les fichiers temporaires des IDE
+simpl_cine/*.log
+simpl_cine/.idea/
