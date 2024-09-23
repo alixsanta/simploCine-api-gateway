@@ -11,13 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("4dec8d2f-c9fa-4970-96f7-f22bba486dcc")]
-[assembly: System.Reflection.AssemblyCompanyAttribute("simplonCine-api-gateway")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("simplonCine-api-gateway.tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc38bb4a2baba5d85c86b85dcaf5ababa8be2b5c")]
-[assembly: System.Reflection.AssemblyProductAttribute("simplonCine-api-gateway")]
-[assembly: System.Reflection.AssemblyTitleAttribute("simplonCine-api-gateway")]
+[assembly: System.Reflection.AssemblyProductAttribute("simplonCine-api-gateway.tests")]
+[assembly: System.Reflection.AssemblyTitleAttribute("simplonCine-api-gateway.tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Généré par la classe MSBuild WriteCodeFragment.

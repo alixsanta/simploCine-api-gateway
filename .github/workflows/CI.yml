@@ -25,7 +25,7 @@ jobs:
 
       # Étape 3 : Restaurer les dépendances (en spécifiant le chemin vers le projet dans simplonCine-api-gateway)
       - name: Restore dependencies
-        run: dotnet restore simplonCine-api-gateway/simplonnCine-api-gateway.sln --no-cache
+        run: dotnet restore simplonCine-api-gateway/simplonCine-api-gateway.sln --no-cache
 
       # Étape 4 : Compiler la solution
       - name: Build solution
@@ -64,7 +64,7 @@ jobs:
         run: |
           dotnet tool install --global dotnet-sonarscanner
           dotnet sonarscanner begin /k:"alixsanta_simploCine-api-gateway" /o:"alixsanta" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.login="${{ secrets.API_GATEWAY }}" /d:sonar.cs.opencover.reportsPaths="**/*cobertura.xml"
-          dotnet build simplonCine-api-gateway/simplonnCine-api-gateway.sln
+          dotnet build simplonCine-api-gateway/simplonCine-api-gateway.sln
           dotnet sonarscanner end /d:sonar.login="${{ secrets.API_GATEWAY }}"
       # Étape 10 : Publier le rapport de couverture de code en tant qu'artefact
       - name: Upload coverage report
