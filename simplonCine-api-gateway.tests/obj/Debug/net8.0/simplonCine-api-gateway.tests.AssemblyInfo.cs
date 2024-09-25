@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("simplonCine-api-gateway.tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc38bb4a2baba5d85c86b85dcaf5ababa8be2b5c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+635ba14d3343a210596da64d6b89c5ebf4131ca9")]
 [assembly: System.Reflection.AssemblyProductAttribute("simplonCine-api-gateway.tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("simplonCine-api-gateway.tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
